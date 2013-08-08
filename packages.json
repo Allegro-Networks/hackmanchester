@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "express": "3.2.6",
-    "ejs": "*",    
+    "ejs": "*"
   },
   "devDependencies": {
     "zombie": "*",
