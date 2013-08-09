@@ -1,0 +1,8 @@
+circle.yml
+.gitignore
+Gemfile
+Gemfile.lock
+README.md
+/.git
+/tests
+/rake_tools
