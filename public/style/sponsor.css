@@ -1,9 +1,54 @@
-.sponsor {
-  padding: 15px 0px 0px 5px;
+#companies {
+  margin-top: 40px;
+  background: #FFF;
 }
-.sponsor a {
-  background: none;
-  font-size: 1.8em;
+#companies div {
+  position: relative;
+}
+#companies #company-list {
+  height: 150px;
+}
+#companies #company-list .company {
+  padding-top: 50px;
+}
+#companies header {
+  background: none repeat scroll 0 0 #202020;
+}
+#companies header h2 {
+  color: #FFFFFF;
+  font-size: 46px;
+  letter-spacing: 0.05em;
+  line-height: 74px;
+  text-transform: uppercase;
+  background: 530px 0 no-repeat url(../images/chevrons-white.png);
+}
+#companies h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 40px 0 20px 0;
+  line-height: 1;
+}
+#companies p {
+  line-height: 1.8;
   font-weight: bold;
+  font-family: museo-sans, sans-serif;
+}
+#companies p a {
+  background: none;
   color: #000000;
+  font-size: 35px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+#companies h4 {
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1;
+  top: 150px;
+  right: -80px;
+  margin: 0;
+  padding: 0;
 }
