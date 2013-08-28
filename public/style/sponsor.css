@@ -1,6 +1,5 @@
 #companies {
-  margin-top: 40px;
-  background: #FFF;
+  background: #202020;
 }
 #companies div {
   position: relative;
@@ -12,15 +11,15 @@
   padding-top: 50px;
 }
 #companies header {
-  background: none repeat scroll 0 0 #202020;
+  background: none repeat scroll 0 0 #FFF;
 }
 #companies header h2 {
-  color: #FFFFFF;
+  color: #000000;
   font-size: 46px;
   letter-spacing: 0.05em;
   line-height: 74px;
   text-transform: uppercase;
-  background: 530px 0 no-repeat url(../images/chevrons-white.png);
+  background: 530px 0 no-repeat url(../images/chevrons-black.png);
 }
 #companies h3 {
   text-transform: uppercase;
@@ -35,7 +34,7 @@
 }
 #companies p a {
   background: none;
-  color: #000000;
+  color: #FFF;
   font-size: 35px;
   padding: 10px;
   text-transform: uppercase;

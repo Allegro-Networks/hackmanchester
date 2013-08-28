@@ -2726,15 +2726,15 @@ sub {
   height: 100%;
 }
 #register header {
-  background: none repeat scroll 0 0 #202020;
+  background: none repeat scroll 0 0 #fff;
 }
 #register header h2 {
-  color: #FFFFFF;
+  color: #202020;
   font-size: 46px;
   letter-spacing: 0.05em;
   line-height: 74px;
   text-transform: uppercase;
-  background: 640px 0 no-repeat url(../images/chevrons-yellow.png);
+  background: 640px 0 no-repeat url(../images/chevrons-black.png);
 }
 #register form fieldset {
   width: 460px;
