@@ -7,8 +7,21 @@
 #companies #company-list {
   height: 150px;
 }
+#companies #company-list .bracket {
+  color: white;
+  font-size: 300px;
+  top: 130px;
+}
+#companies #company-list .bracket .left {
+  float: left;
+  left: -90px;
+}
+#companies #company-list .bracket .right {
+  float: right;
+  right: -85px;
+}
 #companies #company-list .company {
-  padding-top: 50px;
+  text-align: center;
 }
 #companies header {
   background: none repeat scroll 0 0 #FFF;
