@@ -6,6 +6,8 @@
 }
 #companies #company-list {
   height: 150px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 #companies #company-list .bracket {
   color: white;
@@ -22,6 +24,7 @@
 }
 #companies #company-list .company {
   text-align: center;
+  line-height: 0.5;
 }
 #companies header {
   background: none repeat scroll 0 0 #FFF;
