@@ -34,17 +34,12 @@
   margin: 40px 0 20px 0;
   line-height: 1;
 }
-#companies p {
+#companies .sponsor {
   line-height: 1;
   font-weight: bold;
   font-family: museo-sans, sans-serif;
-}
-#companies p a {
-  background: none;
-  color: #FFF;
   font-size: 38px;
   padding: 10px;
-  text-transform: uppercase;
 }
 #companies h4 {
   position: absolute;
