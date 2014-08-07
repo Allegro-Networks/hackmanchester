@@ -12,7 +12,9 @@ website.set('view engine', 'ejs');
 website.use(express.favicon(__dirname + '/public/images/favicon.ico'));
 website.use(express.bodyParser());
 website.use(express.methodOverride());
-website.use(less({ src: __dirname + '/public' }));
+website.use(less({
+  src: path.join(__dirname, '/public')
+}));
 website.use(express.cookieParser('JIMMY'));
 website.use(express.session());
 website.use(express.bodyParser());
