@@ -1,4 +1,4 @@
-task :default => [:tests, :git]
+task :default => [:git]
 multitask :tests => [:unit_tests]
 multitask :dependencies => [:node_dependencies, :ruby_dependencies]
 @run_options = {verbose: Rake.application.options.trace}
