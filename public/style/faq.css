@@ -6,12 +6,13 @@
 }
 #faqs header {
   background: none repeat scroll 0 0 #FFF;
+  margin-bottom: 20px;
 }
 #faqs header h2 {
   color: #000000;
   font-size: 46px;
   letter-spacing: 0.05em;
-  line-height: 74px;
+  line-height: 65px;
   text-transform: uppercase;
   background: 530px 0 no-repeat url(../images/chevrons-black.png);
 }
@@ -23,7 +24,6 @@
   color: #FFFFFF;
   text-transform: uppercase;
   font-size: 24px;
-  margin: 20px 0 10px 0;
   line-height: 1;
 }
 #faqs p {
