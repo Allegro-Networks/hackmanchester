@@ -1,53 +1,41 @@
-#companies {
-  background: #202020;
+#sponsors {
+  padding-bottom: 40px;
+  background: #FFF;
   div {
     position: relative;
   }
 
-  #company-list{
-    padding-top: 50px;
-    padding-bottom: 70px;
-
-    .company{
-      text-align: center;
-      line-height: 0.5;
-    }
-
-  }
-
   header {
-    background: none repeat scroll 0 0 #FFF;
-
+    background: none repeat scroll 0 0 #202020;
     h2 {
-      color: #000000;
+      color: #FFF;
       font-size: 46px;
       letter-spacing: 0.05em;
       line-height: 74px;
       text-transform: uppercase;
-      background: 530px 0 no-repeat url(../images/chevrons-black.png);
+      background: 530px 0 no-repeat url(../images/chevrons-white.png);
     }
   }
-
-  h1 {
-      font-size: 80px;
-      letter-spacing: 0.05em;
-    }
-
-  h3 {
+   
+   h3 {
     text-transform: uppercase;
+    color:#202020;
     font-size: 24px;
     margin: 40px 0 20px 0;
     line-height: 1;
   }
-
-  .sponsor {
-    line-height: 1;
-    font-weight: bold;
-    font-family: museo-sans,sans-serif;
-    font-size: 38px;
-    padding: 10px;
+  
+  p {
+    font-size: 16px;
+    color: #202020;
+    line-height: 1.8;
+    margin-bottom: 30px;
+     a.cta {
+      padding: 10px;
+      text-transform: uppercase;
+    }
   }
-
+  
   h4 {
     position: absolute;
     -webkit-transform: rotate(-90deg);
@@ -55,10 +43,79 @@
     font-size: 30px;
     font-weight: 900;
     line-height: 1;
+    color:#fff;
     top: 150px;
     right: -80px;
     margin: 0;
     padding: 0;
   }
-}
+  
+  #target-container {
+    height: 232px;
+    width: 233px;
+    background: no-repeat url(../images/target-container.png);
+    margin: 40px 0 0 10px;
+    zoom: 1;
+    #target-text {
+    margin: 29px 0;
+    height: 174px;
+    position: relative;
+  }
+   #target-text p {
+    height: 174px;
+    line-height: 174px;
+    margin: 0;
+    position: relative;
+    z-index: 9999;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+   #target-text #target-percentage {
+    position: absolute;
+    bottom: 1px;
+    width: 233px;
+    background: bottom no-repeat url(../images/target-graph.png);
+  }
+   #target-text #target-percentage.per10 {
+    height: 10%;
+  }
+   #target-text #target-percentage.per20 {
+    height: 20%;
+  }
+   #target-text #target-percentage.per30 {
+    height: 30%;
+  }
+   #target-text #target-percentage.per40 {
+    height: 40%;
+  }
+   #target-text #target-percentage.per50 {
+    height: 50%;
+  }
+   #target-text #target-percentage.per60 {
+    height: 60%;
+  }
+   #target-text #target-percentage.per70 {
+    height: 70%;
+  }
+   #target-text #target-percentage.per80 {
+    height: 80%;
+  }
+   #target-text #target-percentage.per90 {
+    height: 90%;
+  }
+   #target-text #target-percentage.per100 {
+    height: 100%;
+  }
+  }
 
+   #target-container:before,  #target-container:after {
+    display: table;
+    content: "";
+    zoom: 1;
+  }
+   #target-container:after {
+    clear: both;
+  }
+   
+}
