@@ -47,6 +47,7 @@
   font-family: museo-sans, sans-serif;
   font-size: 38px;
   padding: 10px;
+  text-transform: uppercase;
 }
 #companies h4 {
   position: absolute;

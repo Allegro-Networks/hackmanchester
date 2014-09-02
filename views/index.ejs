@@ -18,6 +18,7 @@
         <link rel="stylesheet" type="text/css" href="./style/challenge.css">
         <link rel="stylesheet" type="text/css" href="./style/faq.css">
         <link rel="stylesheet" type="text/css" href="./style/footer.css">
+        <link rel="stylesheet" type="text/css" href="./style/flipclock.css">
           
         <!-- Scripts -->
         <script type="text/javascript" async="" src="./javascript/ga.js"></script><script src="./javascript/modernizr.min.js"></script>
@@ -30,7 +31,9 @@
       <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+
       
+      <script src="./javascript/flipclock.js"></script>  
         
         <script type="text/javascript">
           var _gaq = _gaq || [];
@@ -81,7 +84,7 @@
                     <h3>When</h3>
                     <p class="date"></p>
                     <p>25th-26th October 2014</p>
-                    <p> </p>
+                    <div class="clock" style="margin:2em;"></div>
                     <!-- <p>
                         <a href="http://deskand.co/hackmanchester" class="cta">Last Year</a>
                     </p> -->
@@ -106,9 +109,14 @@
                 </div>
               </div>
               <div class="row">
-                <div class="span12 company">
+                <div class="span6 company">
                   <div class="sponsor">
                     <a href="http://www.clockworksms.com/">CLOCKWORK</a>
+                  </div>
+                </div>
+                <div class="span6 company">
+                  <div class="sponsor">
+                    <a href="http://www.laterooms.com/">LateRooms.com</a>
                   </div>
                 </div>
             </div>
@@ -123,6 +131,7 @@
                   <h2><a href="http://sendgrid.com/">SENDGRID</a></h2>
                   </div>
                 </div>
+                
             </div>
           </div>
          </section>
@@ -263,6 +272,28 @@
             $(document).ready(function() {
                 $('#ss-form').validate();
             });
+        </script>
+
+        <script type="text/javascript">
+          var clock;
+
+          $(document).ready(function() {
+
+            // Grab the current date
+            var currentDate = new Date();
+
+            // Set some date in the future. In this case, it's always Jan 1
+            var futureDate  = new Date(2014, 9, 25, 12, 0, 0);
+
+            // Calculate the difference in seconds between the future and current date
+            var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+            // Instantiate a coutdown FlipClock
+            clock = $('.clock').FlipClock(diff, {
+              clockFace: 'DailyCounter',
+              countdown: true
+            });
+          });
         </script>
     
   </body>
