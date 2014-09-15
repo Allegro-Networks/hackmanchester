@@ -2534,6 +2534,17 @@ sub {
   background: #FFCC00;
 }
 
+.days{
+  font-size:4em;
+  height:1em;
+  font-weight: bolder;
+}
+.month{
+  font-size:3em;
+  height:1em;
+  font-weight: bolder;
+}
+
 
 div.submit-holder {
   text-align: right;
