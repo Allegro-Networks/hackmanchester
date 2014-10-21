@@ -1,34 +1,29 @@
 var express = require('express'),
 	less = require('less-middleware'),
+    registerRoutes = require('./registerRoutes'),
 	path = require('path');
 
-var website = express(),
+var app = express(),
     ROOT_DIRECTORY = __dirname,
     ASSETS_DIRECTORY = path.join(ROOT_DIRECTORY, 'public'),
     PAGE_DIRECTORY = path.join(ROOT_DIRECTORY, 'views');
 
-website.set('views', PAGE_DIRECTORY);
-website.set('view engine', 'ejs');
-website.use(express.favicon(__dirname + '/public/images/favicon.ico'));
-website.use(express.bodyParser());
-website.use(express.methodOverride());
-website.use(less({
+app.set('views', PAGE_DIRECTORY);
+app.set('view engine', 'ejs');
+app.use(express.favicon(__dirname + '/public/images/favicon.ico'));
+app.use(express.bodyParser());
+app.use(express.methodOverride());
+app.use(less({
   src: path.join(__dirname, '/public')
 }));
-website.use(express.cookieParser('JIMMY'));
-website.use(express.session());
-website.use(express.bodyParser());
-website.use(website.router);
-website.use(express.static(ASSETS_DIRECTORY));
+app.use(express.cookieParser('JIMMY'));
+app.use(express.session());
+app.use(express.bodyParser());
+app.use(app.router);
+app.use(express.static(ASSETS_DIRECTORY));
 
-
-website.get('/',function(request,response){
-	var headlineSponsor = {uri:'http://www.waukta.com/', name: 'WA:UK TA'}
-	var sponsors = {headline:headlineSponsor};
-	var model = {sponsors:sponsors};
-	response.render('index', model);
-})
-
-website.listen(process.env.PORT,function(){
-    console.log("hack manchester has started on port ",process.env.PORT);
+registerRoutes(app, function(){
+    app.listen(process.env.PORT,function(){
+	    console.log("hack manchester has started on port ",process.env.PORT);
+	});
 });
