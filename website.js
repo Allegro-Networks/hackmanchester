@@ -23,8 +23,10 @@ website.use(express.static(ASSETS_DIRECTORY));
 
 
 website.get('/',function(request,response){
-	sponsors = []
-	response.render('index');
+	var headlineSponsor = {uri:'http://www.waukta.com/', name: 'WA:UK TA'}
+	var sponsors = {headline:headlineSponsor};
+	var model = {sponsors:sponsors};
+	response.render('index', model);
 })
 
 website.listen(process.env.PORT,function(){
