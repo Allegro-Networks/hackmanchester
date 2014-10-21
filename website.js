@@ -23,6 +23,7 @@ website.use(express.static(ASSETS_DIRECTORY));
 
 
 website.get('/',function(request,response){
+	sponsors = []
 	response.render('index');
 })
 
