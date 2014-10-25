@@ -1,34 +1,35 @@
- <!-- Challenges -->
-<section id="live_stream" class='section'>
-	<header>
-		<h2 class="container">LIVE</h2>
-	</header>
-	<div class='video'>
-	  	<%if( hackEvent==='Day 1'){%>
-		<!-- Day 1 Video Embed: -->
-		<iframe width="560" height="315"
-		src="//www.youtube.com/embed/IQUvZeiQzCQ" frameborder="0"
-		allowfullscreen></iframe>
-		<%}%>
-
-		<%if( hackEvent==='Day 2'){%>
-			<!-- Day 2 Video Embed: -->
+<%if( video === 'true'){%>
+	<section id="live_stream" class='section'>
+		<header>
+			<h2 class="container">LIVE</h2>
+		</header>
+		<div class='video'>
+		  	<%if( hackEvent==='Day 1'){%>
+			<!-- Day 1 Video Embed: -->
 			<iframe width="560" height="315"
-			src="//www.youtube.com/embed/_OzLVY53wto" frameborder="0"
+			src="//www.youtube.com/embed/IQUvZeiQzCQ" frameborder="0"
 			allowfullscreen></iframe>
-		<%}%>
+			<%}%>
 
-		<%if( hackEvent==='Awards'){%>
-			<!-- Awards Show Backup Embed (if I need to disconnect from youtube to move
-			downstairs i'll need this new stream): -->
-			<iframe width="560" height="315"
-			src="//www.youtube.com/embed/58Jh3Sn9X_A" frameborder="0"
-			allowfullscreen></iframe>
-		<%}%>
+			<%if( hackEvent==='Day 2'){%>
+				<!-- Day 2 Video Embed: -->
+				<iframe width="560" height="315"
+				src="//www.youtube.com/embed/_OzLVY53wto" frameborder="0"
+				allowfullscreen></iframe>
+			<%}%>
 
-		Chat room embed:
-		<iframe width="560" height="315" frameborder="0" scrolling="no"
-		marginheight="0" marginwidth="0" allowtransparency="true"
-		src="http://chatroll.com/embed/chat/hack-manchester?id=30nbYJyL_U8&platform=html&w=$0"></iframe>
-	</div>
-</section>
+			<%if( hackEvent==='Awards'){%>
+				<!-- Awards Show Backup Embed (if I need to disconnect from youtube to move
+				downstairs i'll need this new stream): -->
+				<iframe width="560" height="315"
+				src="//www.youtube.com/embed/58Jh3Sn9X_A" frameborder="0"
+				allowfullscreen></iframe>
+			<%}%>
+
+			Chat room embed:
+			<iframe width="560" height="315" frameborder="0" scrolling="no"
+			marginheight="0" marginwidth="0" allowtransparency="true"
+			src="http://chatroll.com/embed/chat/hack-manchester?id=30nbYJyL_U8&platform=html&w=$0"></iframe>
+		</div>
+	</section>
+<%}%>
