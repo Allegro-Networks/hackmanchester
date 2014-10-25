@@ -17,6 +17,7 @@ module.exports = function(website){
 		}
 		var model = {sponsors:sponsors, hackEvent:hackEvent, video:video};
 		console.log(date.format('DD/MM/YY h:mm:ss'));
+		console.log(model);
 		response.render('index', model);
 	});
 
