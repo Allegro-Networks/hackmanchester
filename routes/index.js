@@ -8,4 +8,7 @@ module.exports = function(website){
 		response.render('index', model);
 	});
 
+	website.get('/junior',function(request,response){
+		response.render('junior');
+	});
 };
