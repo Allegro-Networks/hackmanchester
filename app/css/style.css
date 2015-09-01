@@ -1,0 +1,549 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+	background: #202020;
+	font-family: "museo sans", sans-serif;
+	color: #202020;
+}
+
+body{
+	max-width: 1440px;
+	margin: 0 auto;
+	background-color: #FFCC00;
+	background-image: repeating-linear-gradient(45deg, #202020 0px, #202020 50px, transparent 50px, transparent 100px, #202020 100px);
+}
+
+body#junior{
+	background-color: #24890d;
+}
+
+/*.wrapper{
+	max-width: 1200px;
+	margin: 0 auto;
+}*/
+
+header{
+	padding: 50px 0;
+	overflow: hidden;
+	border-bottom: 50px solid #202020;
+}
+
+header hgroup{
+	overflow: hidden;
+}
+
+header h1#logo{
+	background: #FFCC00;
+	padding: 50px;
+	width: 50%;
+	box-sizing: border-box;
+	float: left;
+}
+
+body#junior header h1#logo{
+	background: #24890d
+}
+
+header h2{
+	background: #202020;
+	float: left;
+	width: 50%;
+	padding: 50px;
+	box-sizing: border-box;
+}
+
+p.introduction{
+	background: #202020;
+	font-size: 40px;
+	line-height: 1.5;
+	color: #fff;
+	width: 50%;
+	padding: 50px;
+	box-sizing: border-box;
+	margin-top: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+	height: 350px;
+	width: 50%;
+	float: left;
+}
+
+div.booking{
+	width: 50%;
+	float: left;
+	height: 350px;
+	border: 50px solid transparent;
+	box-sizing: border-box;
+}
+
+div.booking ul{
+	background: #FFCC00;
+	padding: 50px 50px 50px 50px;
+}
+
+body#junior div.booking ul{
+	background: #24890d
+}
+
+div.booking li{
+	background: #202020;
+	text-transform: uppercase;
+	height: 100px;
+	font-size: 24px;
+	transition: background 0.56s;
+	border-radius: 25px;
+}
+
+div.booking li.alpha{
+	margin-bottom: 50px;
+}
+
+div.booking li a{
+	line-height: 100px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+}
+
+div.booking li:hover{
+	background: #fff;
+}
+
+div.booking li:hover a{
+	color: #000;
+}
+
+#location{
+	background-color: #FFCC00;
+}
+
+body#junior #location{
+	background-color: #24890d;
+}
+
+#map-canvas {
+	height: 400px;
+	margin: 0;
+	padding: 0;
+}
+
+#location p{
+	background: #202020;
+	color: #fff;
+	font-size: 24px;
+	line-height: 50px;
+	padding: 50px;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+#main_content{
+	background-color: #FFCC00;
+	color: #202020;
+	clear: both;
+	padding: 50px;
+	font-size: 32px;
+	line-height: 50px;
+}
+
+body#junior #main_content{
+	background-color: #24890d;
+}
+
+#main_content a{
+	display: inline-block;
+	background: #202020;
+	padding: 5px;
+	margin: 5px;
+	color: #fff;
+	text-decoration: none;
+}
+
+#videos{
+	border-top: 50px solid #202020;
+}
+
+#videos ul{
+	overflow: hidden;
+}
+
+#videos ul li{
+	float: left;
+	width: 50%;
+	background: #202020;
+	color: #FFCC00;
+	height: 400px;
+	background-size: cover;
+	background-position: center center;
+}
+
+body#junior #videos ul li{
+	color: ##24890d;
+}
+
+#videos ul li#intro_vid{
+	background-image: url(../images/video1.jpg);
+}
+
+#videos ul li#summary_vid{
+	background-image: url(../images/video2.jpg);
+}
+
+#videos ul li a{
+	display: block;
+	height: 400px;
+	width: 100%;
+	background-image: url(../images/video_icon.png);
+	background-size: 180px 180px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
+
+body#junior #videos ul li a{
+	background-image: url(../images/video_icon_junior.png);
+}
+
+#sponsors{
+	border-top: 50px solid #202020;
+	background: #fff;
+	padding: 50px;
+	overflow: hidden;
+}
+
+#sponsors li{
+	background: #202020;
+	background-image: url(../images/sponsor_logo_test.png);
+	background-size: 100%;
+	width: 30%;
+	margin: 1.66%;
+	float: left;
+	color: #fff;
+	padding-top: 30%;
+	position: relative;
+}
+
+#sponsors li div {
+	position: absolute;
+	top: 60%;
+	text-align: center;
+	width: 100%;
+}
+
+#sponsors li div h2{
+	font-size: 18px;
+	line-height: 20px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+#sponsors li div p{
+	margin-bottom: 10px;
+}
+
+#sponsors li div p a{
+	background: #ffcc00;
+	color: #202020;
+	display: inline-block;
+	padding: 5px;
+	margin: 5px;
+	font-size: 12px;
+	text-decoration: none;
+	transition: all 0.25s;
+	text-transform: uppercase;
+}
+
+body#junior #sponsors li div p a{
+	background: #24890d;
+}
+
+#sponsors li div p a:hover{
+	background: #202020;
+	color: #ffcc00;
+}
+
+body#junior #sponsors li div p a:hover{
+	background: #202020;
+	color: #24890d;
+}
+#sponsors li div h2.sponsor{
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	padding-left: 30px;
+}
+
+#sponsors li div h2.sponsor span{
+	padding-left: 5px;
+
+
+}
+
+#sponsors li div h2.headline{
+	background-image: url(../images/sponsor_headline.png);
+}
+
+#sponsors li div h2.challenge_s{
+	background-image: url(../images/sponsor_challenge.png);
+}
+
+#sponsors li div h2.bar {
+	background-image: url(../images/sponsor_bar.png);
+}
+
+#sponsors li div h2.mentor {
+	background-image: url(../images/sponsor_mentor.png);
+}
+
+#sponsors li div h2.mover_and_shaker {
+	background-image: url(../images/sponsor_mover.png);
+}
+
+footer{
+	border-top: 50px solid #202020;
+	padding: 50px 0;
+	overflow: hidden;
+}
+
+footer p{
+	background: #202020;
+	color: #fff;
+	font-size: 24px;
+	line-height: 50px;
+	padding: 0 50px;
+	box-sizing: border-box;
+}
+
+footer p#copyright_info{
+	width: 50%;
+	float: left;
+}
+
+footer p#link_love{
+	float: right;
+}
+
+footer p#link_love a{
+	height: 50px;
+	width: 146px;
+	display: inline-block;
+	margin: 25px 0 25px 10px;
+	background-image: url(../images/farm_logo.png);
+	background-size: cover;
+	text-indent: -9999px;
+}
+
+@media (max-width: 1080px){
+	div.booking ul{
+		padding: 50px 25px;
+	}
+}
+
+@media (max-width: 990px){
+	p.introduction{
+		font-size: 36px;
+	}
+
+	#sponsors ul li{
+		width: 48%;
+		margin: 1%;
+		padding-top: 48%;
+	}
+
+
+	div.booking li {
+		font-size: 21px;
+	}
+}
+
+@media (max-width: 900px){
+	footer p {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 880px){
+	p.introduction{
+		font-size: 30px;
+		height: 300px;
+	}
+
+	div.booking ul{
+		padding: 25px;
+	}
+}
+
+@media (max-width: 770px){
+
+	div.booking {
+		width: 100%;
+		float: none;
+		margin-bottom: 50px;
+	}
+
+	div.booking ul{
+		padding: 50px;
+	}
+
+	p.introduction{
+		width: 100%;
+		float: none;
+		height: auto;
+	}
+
+	header h1#logo{
+		width: 100%;
+		float: none;
+		height: auto;
+	}
+
+	header h2{
+		width: 100%;
+		float: none;
+		height: auto;
+	}
+}
+
+
+@media (max-width: 750px){
+	p.introduction{
+		font-size: 28px;
+	}
+
+	footer p{
+		font-size: 14px;
+		line-height: 25px;
+		padding: 25px 50px;
+	}
+
+	footer p#link_love a{
+		height: 25px;
+		width: 73px;
+		margin: 12.5px 0 12.5px 10px;
+	}
+}
+
+@media (max-width: 650px){
+	#main_content p{
+		font-size: 24px;
+	}	
+}
+
+@media (max-width: 600px){
+
+	div.booking ul{
+		padding: 50px;
+	}
+
+	div.booking ul li{
+		font-size: 21px;
+	}
+
+	#videos ul li{
+		float: none;
+		width: 100%;
+	}
+
+	footer p{
+		text-align: center;
+		margin: 0 50px;
+	}
+
+	#sponsors ul li{
+		width: 80%;
+		margin: 10%;
+		padding-top: 80%;
+	}
+
+	footer p#copyright_info{
+		float: none;
+		width: auto;
+		margin-bottom: 50px;
+	}
+
+	footer p#link_love{
+		float: none;
+	}
+}
+
+@media (max-width: 500px){
+	#main_content p{
+		font-size: 18px;
+		line-height: 40px;
+	}
+
+	#location p{
+		font-size: 18px;
+		line-height: 40px;	
+	}	
+
+	div.booking{
+		border-width: 0;
+	}
+}
+
+@media (max-width: 440px){
+	#sponsors ul li{
+		width: 100%;
+		margin: 0 0 10% 0;
+		padding-top: 100%;
+	}
+	
+
+	div.booking ul{
+		padding: 50px 25px;
+	}
+
+	div.booking ul li{
+		font-size: 18px;
+	}
+}
+
+

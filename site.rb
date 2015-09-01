@@ -41,7 +41,7 @@ class App < Sinatra::Application
 	end
 
 	get '/' do
-		status 200
+		erb :index
 	end
 
 	get '/junior' do

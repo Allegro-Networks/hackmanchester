@@ -1,183 +1,426 @@
-function drawMap() {
-    var paper = Raphael('map', 500, 500);
-
-    var COUNTRY_COLOUR = 'black',
-        NETWORK_COLOUR = 'red';
-
-    var WIDTH_FACTOR = 2,
-        HEIGHT_FACTOR = 2,
-        SIZE_FACTOR = 2;
-
-    function drawIreland() {
-        paper
-            .circle(50*WIDTH_FACTOR, 70*HEIGHT_FACTOR, 18)
-            .attr("stroke", COUNTRY_COLOUR)
-            .animate({
-                "cx":50*WIDTH_FACTOR,
-                "cy":70*HEIGHT_FACTOR,
-                "r" :18*SIZE_FACTOR}, 1000, "elastic");
-        
-        paper
-            .circle(60*WIDTH_FACTOR, 55*HEIGHT_FACTOR, 12)
-            .attr("stroke", COUNTRY_COLOUR)
-            .animate({
-                "cx":60*WIDTH_FACTOR,
-                "cy":55*HEIGHT_FACTOR,
-                "r" :12*SIZE_FACTOR}, 1000, "elastic");
+  
+    window.onload = function () {
+        var styles = [
+    {
+        "featureType": "administrative",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.country",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "color": "#d6bc68"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#e7cd79"
+            },
+            {
+                "weight": 0.1
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.man_made",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#ffcc00"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural.landcover",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#d6bc68"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural.landcover",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ff0073"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural.terrain",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ffcc00"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#d6bc68"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.attraction",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.attraction",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "color": "#cfb665"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.business",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#e9d9a6"
+            },
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.government",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.medical",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.place_of_worship",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.school",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.sports_complex",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "color": "#e9d9a6"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "weight": 1
+            },
+            {
+                "color": "#e9d9a6"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#202020"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "color": "#e9d9a6"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#202020"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway.controlled_access",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#d6bc68"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#bc980a"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "color": "#cfb665"
+            },
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#bc980a"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "weight": "0.01"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.line",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#202020"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.station.airport",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "color": "#d6bc68"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.station.bus",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "color": "#bc980a"
+            }
+        ]
     }
-
-    function drawBritain() {
-        // wales
-        paper
-            .circle(95*WIDTH_FACTOR, 85*HEIGHT_FACTOR, 10)
-            .attr("stroke", COUNTRY_COLOUR)
-            .animate({
-                "cx":95*WIDTH_FACTOR,
-                "cy":85*HEIGHT_FACTOR,
-                "r" :10*SIZE_FACTOR}, 1000, "elastic");
-        paper
-            .circle(97*WIDTH_FACTOR, 75*HEIGHT_FACTOR, 8)
-            .attr("stroke", COUNTRY_COLOUR)
-            .animate({
-                "cx":97*WIDTH_FACTOR,
-                "cy":75*HEIGHT_FACTOR,
-                "r" :8*SIZE_FACTOR}, 1000, "elastic");
-        
-        // south england
-        paper
-            .circle(110*WIDTH_FACTOR, 100*HEIGHT_FACTOR, 10)
-            .attr("stroke", COUNTRY_COLOUR)
-            .animate({
-                "cx":110*WIDTH_FACTOR,
-                "cy":100*HEIGHT_FACTOR,
-                "r" :10*SIZE_FACTOR}, 1000, "elastic");
-        paper
-            .circle(100*WIDTH_FACTOR, 107*HEIGHT_FACTOR, 6)
-            .attr("stroke", COUNTRY_COLOUR)
-            .animate({
-                "cx":100*WIDTH_FACTOR,
-                "cy":107*HEIGHT_FACTOR,
-                "r" :6*SIZE_FACTOR}, 1000, "elastic");
-        paper
-            .circle(140*WIDTH_FACTOR, 100*HEIGHT_FACTOR, 5)
-            .attr("stroke", COUNTRY_COLOUR)
-            .animate({
-                "cx":140*WIDTH_FACTOR,
-                "cy":100*HEIGHT_FACTOR,
-                "r" :5*SIZE_FACTOR}, 1000, "elastic");
-        paper
-            .circle(138*WIDTH_FACTOR, 83*HEIGHT_FACTOR, 8)
-            .attr("stroke", COUNTRY_COLOUR)
-            .animate({
-                "cx":138*WIDTH_FACTOR,
-                "cy":83*HEIGHT_FACTOR,
-                "r" :8*SIZE_FACTOR}, 1000, "elastic");
-        
-        // north england
-        paper
-            .circle(120*WIDTH_FACTOR, 55*HEIGHT_FACTOR, 7)
-            .attr("stroke", COUNTRY_COLOUR)
-            .animate({
-                "cx":120*WIDTH_FACTOR,
-                "cy":55*HEIGHT_FACTOR,
-                "r" :7*SIZE_FACTOR}, 1000, "elastic");
-        paper
-            .circle(98*WIDTH_FACTOR, 27*HEIGHT_FACTOR, 10)
-            .attr("stroke", COUNTRY_COLOUR)
-            .animate({
-                "cx":98*WIDTH_FACTOR,
-                "cy":27*HEIGHT_FACTOR,
-                "r" :10*SIZE_FACTOR}, 1000, "elastic");
-        paper
-            .circle(120*WIDTH_FACTOR, 55*HEIGHT_FACTOR, 7)
-            .attr("stroke", COUNTRY_COLOUR)
-            .animate({
-                "cx":120*WIDTH_FACTOR,
-                "cy":55*HEIGHT_FACTOR,
-                "r" :7*SIZE_FACTOR}, 1000, "elastic");
-        
-        // scotland
-        paper
-            .circle(98*WIDTH_FACTOR, 27*HEIGHT_FACTOR, 10)
-            .attr("stroke", COUNTRY_COLOUR)
-            .animate({
-                "cx":98*WIDTH_FACTOR,
-                "cy":27*HEIGHT_FACTOR,
-                "r" :10*SIZE_FACTOR}, 1000, "elastic");
-
-        paper
-            .circle(100*WIDTH_FACTOR, 9*HEIGHT_FACTOR, 8)
-            .attr("stroke", COUNTRY_COLOUR)
-            .animate({
-                "cx":100*WIDTH_FACTOR,
-                "cy":9*HEIGHT_FACTOR,
-                "r" :8*SIZE_FACTOR}, 1000, "elastic");
-        paper
-            .circle(90*WIDTH_FACTOR, 9*HEIGHT_FACTOR, 6)
-            .attr("stroke", COUNTRY_COLOUR)
-            .animate({
-                "cx":90*WIDTH_FACTOR,
-                "cy":9*HEIGHT_FACTOR,
-                "r" :6*SIZE_FACTOR}, 1000, "elastic");
-
-        
-    }
-
-    function drawNetwork() {
-        // main ring
-        paper
-            .circle(115*WIDTH_FACTOR, 75*HEIGHT_FACTOR, 18)
-            .attr('fill', 'rgba(0, 0, 0, 0)')
-            .attr("stroke", NETWORK_COLOUR)
-            .click(function () {
-                alert("You clicked on the Leeds Metro")
-            })
-            .animate({
-                "cx":115*WIDTH_FACTOR,
-                "cy":75*HEIGHT_FACTOR,
-                "r" :18*SIZE_FACTOR}, 1000, "elastic");
-        
-        // london
-        paper
-            .circle(125*WIDTH_FACTOR, 90*HEIGHT_FACTOR, 12)
-            .attr("stroke", NETWORK_COLOUR)
-            .attr('fill', 'rgba(0, 0, 0, 0)')
-            .click(function () {
-                alert("You clicked on the London Metro")
-            })
-            .animate({
-                "cx":125*WIDTH_FACTOR,
-                "cy":90*HEIGHT_FACTOR,
-                "r" :12*SIZE_FACTOR}, 1000, "elastic");
-
-        // north west
-        paper
-            .circle(104*WIDTH_FACTOR, 45*HEIGHT_FACTOR, 15)
-            .attr('fill', 'rgba(0, 0, 0, 0)')
-            .attr("stroke", NETWORK_COLOUR)
-            .click(function () {
-                alert("You clicked on the North West Metro")
-            })
-            .animate({
-                "cx":104*WIDTH_FACTOR,
-                "cy":45*HEIGHT_FACTOR,
-                "r" :15*SIZE_FACTOR}, 1000, "elastic");
-
-        // manchester
-        paper
-            .circle(105*WIDTH_FACTOR, 51*HEIGHT_FACTOR, 8)
-            .attr('fill', 'rgba(0, 0, 0, 0)')
-            .attr("stroke", NETWORK_COLOUR)
-            .click(function () {
-                alert("You clicked on the Manchester Metro")
-            })
-            .animate({
-                "cx":105*WIDTH_FACTOR,
-                "cy":51*HEIGHT_FACTOR,
-                "r" :8*SIZE_FACTOR}, 1000, "elastic");
-    }
-
-    setTimeout(drawIreland, 10);
-    setTimeout(drawBritain, 200);
-    setTimeout(drawNetwork, 500);
-}
+];
+        var options = {
+        mapTypeControlOptions: {
+            mapTypeIds: ['Styled']
+        },
+            center: new google.maps.LatLng(53.476407, -2.258013),
+            zoom: 17,
+            disableDefaultUI: true,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.SMALL,
+            },
+            disableDoubleClickZoom: true,
+            mapTypeControl: false,
+            scaleControl: false,
+            scrollwheel: false,
+            panControl: false,
+            streetViewControl: false,
+            draggable : true,
+            overviewMapControl: false,
+            overviewMapControlOptions: {
+                opened: false,
+            },
+            mapTypeId: 'Styled'
+        };
+        var div = document.getElementById('map-canvas');
+        var map = new google.maps.Map(div, options);
+        var locations = [['Museum of Science & Industry', 'undefined', 'undefined', 'undefined', 'undefined', 53.4764069, -2.253713199999993, 'https://mapbuildr.com/assets/img/markers/solid-pin-black.png']];
+        for (i = 0; i < locations.length; i++) {
+            if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+            if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+            if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+           if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+           if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+            marker = new google.maps.Marker({
+                icon: markericon,
+                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                map: map,
+                title: locations[i][0],
+                desc: description,
+                tel: telephone,
+                email: email,
+                web: web
+            });
+        link = '';     }
+        var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
+        map.mapTypes.set('Styled', styledMapType);
+    };
