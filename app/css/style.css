@@ -60,9 +60,9 @@ body{
 	background-image: repeating-linear-gradient(45deg, #202020 0px, #202020 50px, transparent 50px, transparent 100px, #202020 100px);
 }
 
-body#junior{
+/*body#junior{
 	background-color: #24890d;
-}
+}*/
 
 /*.wrapper{
 	max-width: 1200px;
@@ -87,9 +87,9 @@ header h1#logo{
 	float: left;
 }
 
-body#junior header h1#logo{
+/*body#junior header h1#logo{
 	background: #24890d
-}
+}*/
 
 header h2{
 	background: #202020;
@@ -128,9 +128,9 @@ div.booking ul{
 	padding: 50px 50px 50px 50px;
 }
 
-body#junior div.booking ul{
+/*body#junior div.booking ul{
 	background: #24890d
-}
+}*/
 
 div.booking li{
 	background: #202020;
@@ -165,9 +165,9 @@ div.booking li:hover a{
 	background-color: #FFCC00;
 }
 
-body#junior #location{
+/*body#junior #location{
 	background-color: #24890d;
-}
+}*/
 
 #map-canvas {
 	height: 400px;
@@ -194,9 +194,9 @@ body#junior #location{
 	line-height: 50px;
 }
 
-body#junior #main_content{
+/*body#junior #main_content{
 	background-color: #24890d;
-}
+}*/
 
 #main_content a{
 	display: inline-block;
@@ -225,9 +225,9 @@ body#junior #main_content{
 	background-position: center center;
 }
 
-body#junior #videos ul li{
+/*body#junior #videos ul li{
 	color: ##24890d;
-}
+}*/
 
 #videos ul li#intro_vid{
 	background-image: url(../images/video1.jpg);
@@ -248,9 +248,9 @@ body#junior #videos ul li{
 	text-indent: -9999px;
 }
 
-body#junior #videos ul li a{
+/*body#junior #videos ul li a{
 	background-image: url(../images/video_icon_junior.png);
-}
+}*/
 
 #sponsors{
 	border-top: 50px solid #202020;
@@ -301,19 +301,19 @@ body#junior #videos ul li a{
 	text-transform: uppercase;
 }
 
-body#junior #sponsors li div p a{
+/*body#junior #sponsors li div p a{
 	background: #24890d;
-}
+}*/
 
 #sponsors li div p a:hover{
 	background: #202020;
 	color: #ffcc00;
 }
 
-body#junior #sponsors li div p a:hover{
+/*body#junior #sponsors li div p a:hover{
 	background: #202020;
 	color: #24890d;
-}
+}*/
 #sponsors li div h2.sponsor{
 	background-size: 20px 20px;
 	background-repeat: no-repeat;
