@@ -1,1 +1,1 @@
-web: node website.js
+web: rackup -s puma -p $PORT
