@@ -1,4 +1,4 @@
-/home/developer/.rvm/rubies/ruby-2.2.0/bin/ruby -r ./siteconf20150901-4348-17v03wp.rb extconf.rb 
+/home/developer/.rvm/rubies/ruby-2.2.0/bin/ruby -r ./siteconf20150901-5099-dgukel.rb extconf.rb 
 checking for ffi_call() in -lffi... yes
 checking for ffi_prep_closure()... yes
 checking for ffi_raw_call()... yes
@@ -41,4 +41,4 @@ compiling LastError.c
 linking shared-object ffi_c.so
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20150901-4348-1wjsrl
+/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20150901-5099-6b8jp2

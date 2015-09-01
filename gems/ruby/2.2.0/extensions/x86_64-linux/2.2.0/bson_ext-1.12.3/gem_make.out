@@ -1,4 +1,4 @@
-/home/developer/.rvm/rubies/ruby-2.2.0/bin/ruby -r ./siteconf20150901-4348-mkivd8.rb extconf.rb 
+/home/developer/.rvm/rubies/ruby-2.2.0/bin/ruby -r ./siteconf20150901-5099-1y7l8ml.rb extconf.rb 
 checking for asprintf()... yes
 checking for ruby/st.h... yes
 checking for ruby/regex.h... yes
@@ -14,4 +14,4 @@ compiling bson_buffer.c
 linking shared-object bson_ext/cbson.so
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 cbson.so ./.gem.20150901-4348-o6u93v/bson_ext
+/usr/bin/install -c -m 0755 cbson.so ./.gem.20150901-5099-171eban/bson_ext
