@@ -1,6 +1,5 @@
 circle.yml
 .gitignore
-Gemfile.lock
 README.md
 /.git
 /tests
