@@ -6,92 +6,18 @@
   <div class="container">
     
     <div id="company-list">
-      <div class="row">
+      <div class="row-fluid">
         <div class="span12 company">
           <h1><a href="<%=sponsors.headline.uri%>"><%=sponsors.headline.name%></a></h1>
         </div>
       </div>
-      <div class="row">
-        <div class="span6 company">
-          <div class="sponsor">
-            <a href="http://www.clockworksms.com/">CLOCKWORKSMS</a>
+      <div class="row-fluid">
+        <%for (i = 0; i < sponsors.challengeSetters.length; i++) {%>
+          <div class="span row-fluid company">
+            <div class="sponsor">
+              <a href="<%=sponsors.challengeSetters[i].uri%>"><%=sponsors.challengeSetters[i].name%></a>
+            </div>
           </div>
-        </div>
-       <div class="span6 company">
-          <div class="sponsor">
-            <a href="http://www.laterooms.com/">LateRooms.com</a>
-          </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="span4 company">
-          <div class="sponsor">
-            <a href="http://www.barclays.com/">BARCLAYS</a>
-          </div>
-        </div>
-        <div class="span4 company">
-          <div class="sponsor">
-            <a href="http://capsulecrm.com/">Capsule</a>
-          </div>
-        </div>
-
-        <div class="span4 company">
-          <div class="sponsor">
-            <a href="http://www.onediary.com/">One Diary</a>
-          </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="span4 company">
-          <div class="sponsor">
-            <h2><a href="http://www.autotrader.co.uk/">AUTOTRADER</a></h2>
-          </div>
-        </div>
-        <div class="span4 company">
-          <div class="sponsor">
-          <h2><a href="http://sendgrid.com/">SENDGRID</a></h2>
-          </div>
-       
-        </div>
-        <div class="span4 company">
-          <div class="sponsor">
-            <h2><a href="http://www.hiddenltd.com//">HIDDEN</a></h2>
-          </div>
-        </div> 
-        
-    </div>
-    <div class="row">
-        <div class="span12 company">
-          <div class="sponsor">
-          <h2><a href="http://www.mspl.co.uk/">Manchester Science Partnerships LTD</a></h2>
-          </div>
-  </div>
-    <div class="row">
-         <div class="span6 company">
-          <div class="sponsor">
-          <h2><a href="http://www.manchestersciencefestival.com/">#mcrscifest</a></h2>
-          </div>
-        </div>
-       
-         <div class="span6 company">
-          <div class="sponsor">
-          <h2><a href="http://facebook.com/CSSalford">University of Salford</a></h2>
-          </div>
-        </div>
-    </div>
-  <div class="row">
-        <div class="span6 company">
-          <div class="sponsor">
-          <h2><a href="http://www.harveynash.com/">HARVEY NASH</a></h2>
-          </div>
-        </div>
-         
-       
-         <div class="span6 company">
-          <div class="sponsor">
-          <h2><a href="http://www.intechnica.com/">INTECHNICA</a></h2>
-          </div>
-        </div>
+        <%}%>
     </div>
  </section>
