@@ -1,5 +1,5 @@
 @run_options = {verbose: Rake.application.options.trace}
-task :default => [:ruby_dependencies, :test, :git]
+task :default => [:ruby_dependencies, :git]
 
 task :ruby_dependencies do
 	sh 'bundle install --path gems'
