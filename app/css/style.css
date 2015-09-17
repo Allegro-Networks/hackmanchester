@@ -346,6 +346,64 @@ div.booking li:hover a{
 	background-image: url(../images/sponsor_mover.png);
 }
 
+#challenges{
+	border-top: 50px solid #202020;
+	background: #202020;
+	font-size: 24px;
+	padding: 50px;
+	overflow: hidden;
+}
+
+#challenges .header{
+	background: #202020;
+	font-size: 40px;
+	line-height: 1.5;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+
+#challenges li{
+	background: #fff;
+	background-size: 100%;
+	width: 30%;
+	height: 12em;
+	margin: 1.66%;
+	float: left;
+	position: relative;
+	padding: 1em;
+}
+
+#challenges li div {
+	position: absolute;
+	top: 10%;
+	text-align: center;
+	width: 85%;
+}
+
+#challenges li div h2{
+	font-size: 1.5em;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+#challenges dd {
+	display: inline;
+  	padding-left: 0.5em;
+}
+
+#challenges dt {
+	margin-top: 1em;
+	font-weight: bold;
+}
+
+#challenges dl {
+	font-size: 0.8em;
+  	text-align: left;
+}
+
+
 footer{
 	border-top: 50px solid #202020;
 	padding: 50px 0;
@@ -392,6 +450,12 @@ footer p#link_love a{
 	}
 
 	#sponsors ul li{
+		width: 48%;
+		margin: 1%;
+		padding-top: 48%;
+	}
+
+	#challenges ul li{
 		width: 48%;
 		margin: 1%;
 		padding-top: 48%;
@@ -502,6 +566,12 @@ footer p#link_love a{
 		padding-top: 80%;
 	}
 
+	#challenges ul li{
+		width: 80%;
+		margin: 10%;
+		padding-top: 80%;
+	}
+
 	footer p#copyright_info{
 		float: none;
 		width: auto;
@@ -531,6 +601,12 @@ footer p#link_love a{
 
 @media (max-width: 440px){
 	#sponsors ul li{
+		width: 100%;
+		margin: 0 0 10% 0;
+		padding-top: 100%;
+	}
+
+	#challenges ul li{
 		width: 100%;
 		margin: 0 0 10% 0;
 		padding-top: 100%;
