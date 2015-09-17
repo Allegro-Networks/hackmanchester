@@ -455,6 +455,13 @@ footer p#link_love a{
 	div.booking ul{
 		padding: 50px 25px;
 	}
+
+	#challenges ul li{
+		width: 48%;
+		margin: 1%;
+		height: 1em;
+		padding-top: 48%;
+	}
 }
 
 @media (max-width: 990px){
@@ -471,6 +478,7 @@ footer p#link_love a{
 	#challenges ul li{
 		width: 48%;
 		margin: 1%;
+		height: 1em;
 		padding-top: 48%;
 	}
 
@@ -624,7 +632,6 @@ footer p#link_love a{
 		margin: 0 0 10% 0;
 		padding-top: 100%;
 	}
-	
 
 	div.booking ul{
 		padding: 50px 25px;
