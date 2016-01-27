@@ -382,9 +382,14 @@
 			hive: { locationName: 'The Hive, Manchester', centreLat:53.482221, centreLng:-2.234539, lat:53.483212, lng:-2.233175}
 		};
 		
-		config_to_use = map_config.hive;
+		config_to_use = map_config.mosi;
 		
-
+        var div = document.getElementById('map-canvas');
+		var location = div.getAttribute('data-location');
+		if (location == 'hive') {
+			config_to_use = map_config.hive;
+		}
+		
         var options = {
         mapTypeControlOptions: {
             mapTypeIds: ['Styled']
@@ -409,7 +414,6 @@
             },
             mapTypeId: 'Styled'
         };
-        var div = document.getElementById('map-canvas');
         var map = new google.maps.Map(div, options);
         var locations = [[config_to_use.locationName, 'undefined', 'undefined', 'undefined', 'undefined', config_to_use.lat, config_to_use.lng, 'https://mapbuildr.com/assets/img/markers/solid-pin-black.png']];
         for (i = 0; i < locations.length; i++) {
