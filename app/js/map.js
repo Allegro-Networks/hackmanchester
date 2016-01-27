@@ -378,10 +378,11 @@
     }
 ];
 		var map_config = {
-			mosi: { centreLat:53.476407, centreLng:-2.258013, lat:53.4764069, lng:-2.253713199999993 }
+			mosi: { locationName: 'Museum of Science & Industry', centreLat:53.476407, centreLng:-2.258013, lat:53.4764069, lng:-2.253713199999993 },
+			hive: { locationName: 'The Hive, Manchester', centreLat:53.482221, centreLng:-2.234539, lat:53.483212, lng:-2.233175}
 		};
 		
-		config_to_use = map_config.mosi;
+		config_to_use = map_config.hive;
 		
 
         var options = {
@@ -410,7 +411,7 @@
         };
         var div = document.getElementById('map-canvas');
         var map = new google.maps.Map(div, options);
-        var locations = [['Museum of Science & Industry', 'undefined', 'undefined', 'undefined', 'undefined', config_to_use.lat, config_to_use.lng, 'https://mapbuildr.com/assets/img/markers/solid-pin-black.png']];
+        var locations = [[config_to_use.locationName, 'undefined', 'undefined', 'undefined', 'undefined', config_to_use.lat, config_to_use.lng, 'https://mapbuildr.com/assets/img/markers/solid-pin-black.png']];
         for (i = 0; i < locations.length; i++) {
             if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
             if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
