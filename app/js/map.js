@@ -379,7 +379,7 @@
 ];
 		var map_config = {
 			mosi: { locationName: 'Museum of Science & Industry', centreLat:53.476407, centreLng:-2.258013, lat:53.4764069, lng:-2.253713199999993 },
-			hive: { locationName: 'The Hive, Manchester', centreLat:53.482221, centreLng:-2.234539, lat:53.483212, lng:-2.233175}
+			hive: { locationName: 'MadLab, Manchester', centreLat:53.482753, centreLng:-2.236415, lat:53.484370, lng:-2.236453}
 		};
 		
 		config_to_use = map_config.mosi;
