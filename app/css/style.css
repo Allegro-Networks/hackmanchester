@@ -208,7 +208,7 @@ div.booking li:hover a{
 }
 
 #videos{
-	border-top: 50px solid #000000;
+	/*border-top: 50px solid #000000;*/
 }
 
 #videos ul{
@@ -347,7 +347,7 @@ div.booking li:hover a{
 }
 
 #challenges{
-	border-top: 50px solid #000000;
+	border-top: 50px solid #fff;
 	background: #000000;
 	font-size: 24px;
 	padding: 50px;
@@ -416,6 +416,49 @@ div.booking li:hover a{
 	color: #fff;
 }
 
+#schedule{
+	border-top: 50px solid #000000;
+	background: #fff;
+	font-size: 24px;
+	padding: 50px;
+	overflow: hidden;
+	text-transform: uppercase;
+}
+
+#schedule .header{
+	padding: 50px;
+	font-size: 40px;
+	overflow: hidden;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+
+#schedule h3{
+	font-size: 1.5em;
+	display: inline-block;
+	margin: 1rem 0;
+}
+
+#schedule td{
+   padding-left:5rem;
+}
+
+
+#schedule dl {
+	font-size: 0.8em;
+  	text-align: left;
+}
+
+#schedule dt {
+	margin: 1em 0 0.2em 0;
+	font-weight: bold;
+}
+
+#schedule dd {
+	display: inline;
+  	padding-left: 0.5em;
+}
 
 footer{
 	border-top: 50px solid #000000;
