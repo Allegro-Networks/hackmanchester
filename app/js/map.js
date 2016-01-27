@@ -377,11 +377,18 @@
         ]
     }
 ];
+		var map_config = {
+			mosi: { centreLat:53.476407, centreLng:-2.258013, lat:53.4764069, lng:-2.253713199999993 }
+		};
+		
+		config_to_use = map_config.mosi;
+		
+
         var options = {
         mapTypeControlOptions: {
             mapTypeIds: ['Styled']
         },
-            center: new google.maps.LatLng(53.476407, -2.258013),
+            center: new google.maps.LatLng(config_to_use.centreLat, config_to_use.centreLng),
             zoom: 17,
             disableDefaultUI: true,
             zoomControl: true,
@@ -403,7 +410,7 @@
         };
         var div = document.getElementById('map-canvas');
         var map = new google.maps.Map(div, options);
-        var locations = [['Museum of Science & Industry', 'undefined', 'undefined', 'undefined', 'undefined', 53.4764069, -2.253713199999993, 'https://mapbuildr.com/assets/img/markers/solid-pin-black.png']];
+        var locations = [['Museum of Science & Industry', 'undefined', 'undefined', 'undefined', 'undefined', config_to_use.lat, config_to_use.lng, 'https://mapbuildr.com/assets/img/markers/solid-pin-black.png']];
         for (i = 0; i < locations.length; i++) {
             if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
             if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
