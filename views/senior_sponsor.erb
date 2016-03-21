@@ -1,0 +1,207 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <meta name="description" content="Hack Manchester is a 24-hour coding competition by @ruby_gem, @squarejazz and @theallseeingpie. Teams of up to four turn up with an idea and just 24 hours later present a working product!">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+        <script type="text/javascript"
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsqPcSmyY-6WIl0Q_Q3Wzr7d-uNFsatGc">
+        </script>
+        <script src ="/js/map.js"></script>
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-31137162-1']);
+          _gaq.push(['_trackPageview']);
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+        <style type="text/css">
+
+        .masthead.segment {
+            min-height: 400px;
+            margin: 0px auto;
+            background-color: #FC0;
+            background-image: repeating-linear-gradient(45deg, #000 0px, #000 50px, transparent 50px, transparent 100px, #000 100px);
+        }
+        .masthead img {
+            background: #FFCC00;
+            margin-top: 3em;
+            margin-bottom: 0em;
+            padding: 2em 5em;
+            width:100%;
+        }
+        .masthead h2 {
+            background: #FFCC00;
+            font-size: 1.7em;
+            font-weight: normal;
+            margin-top:-1em;
+            padding:1em 0em;
+        }
+
+        .ui.vertical.stripe {
+          padding: 8em 0em;
+        }
+        .ui.vertical.stripe h3 {
+          font-size: 2em;
+        }
+        .ui.vertical.stripe .button + h3,
+        .ui.vertical.stripe p + h3 {
+          margin-top: 3em;
+        }
+        .ui.vertical.stripe .floated.image {
+          clear: both;
+        }
+        .ui.vertical.stripe p {
+          font-size: 1.33em;
+        }
+        .ui.vertical.stripe .horizontal.divider {
+          margin: 3em 0em;
+        }
+
+        .quote.stripe.segment {
+          padding: 0em;
+        }
+        .quote.stripe.segment .grid .column {
+          padding-top: 5em;
+          padding-bottom: 5em;
+        }
+
+        .footer.segment {
+          padding: 5em 0em;
+        }
+
+        .secondary.pointing.menu .toc.item {
+          display: none;
+        }
+
+        @media only screen and (max-width: 700px) {
+          .ui.fixed.menu {
+            display: none !important;
+          }
+          .secondary.pointing.menu .item,
+          .secondary.pointing.menu .menu {
+            display: none;
+          }
+          .secondary.pointing.menu .toc.item {
+            display: block;
+          }
+          .masthead.segment {
+            min-height: 350px;
+          }
+          .masthead h1.ui.header {
+            font-size: 2em;
+            margin-top: 1.5em;
+          }
+          .masthead h2 {
+            margin-top: 0.5em;
+            font-size: 1.5em;
+          }
+        }
+
+
+      </style>
+    </head>
+
+    <body>
+        <!-- Page Contents -->
+          <div class="ui masthead center aligned segment">
+
+            <div class="ui text container">
+                <img src="/images/logo.png" alt="HAC 1: Hack Manchester 2016" >
+                <h2>A 24-hour coding competition in the heart of Manchester</h2>
+            </div>
+
+          </div>
+
+          <div class="ui vertical stripe segment">
+            <div class="ui middle aligned stackable grid container">
+              <div class="row">
+                <div class="eight wide column">
+                  <h3 class="ui header">We Help Companies and Companions</h3>
+                  <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
+                  <h3 class="ui header">We Make Bananas That Can Dance</h3>
+                  <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
+                </div>
+                <div class="six wide right floated column">
+                  <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
+                </div>
+              </div>
+              <div class="row">
+                <div class="center aligned column">
+                  <a class="ui huge button">Check Them Out</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="ui vertical stripe quote segment">
+            <div class="ui equal width stackable internally celled grid">
+              <div class="center aligned row">
+                <div class="column">
+                  <h3>"What a Company"</h3>
+                  <p>That is what they all say about us</p>
+                </div>
+                <div class="column">
+                  <h3>"I shouldn't have gone with their competitor."</h3>
+                  <p>
+                    <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ui vertical stripe segment">
+            <div class="ui text container">
+              <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
+              <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
+              <a class="ui large button">Read More</a>
+              <h4 class="ui horizontal header divider">
+                <a href="#">Case Studies</a>
+              </h4>
+              <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
+              <p>Yes I know you probably disregarded the earlier boasts as non-sequitor filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
+              <a class="ui large button">I'm Still Quite Interested</a>
+            </div>
+          </div>
+
+
+          <div class="ui inverted vertical footer segment">
+            <div class="ui container">
+              <div class="ui stackable inverted divided equal height stackable grid">
+                <div class="three wide column">
+                  <h4 class="ui inverted header">About</h4>
+                  <div class="ui inverted link list">
+                    <a href="#" class="item">Sitemap</a>
+                    <a href="#" class="item">Contact Us</a>
+                    <a href="#" class="item">Religious Ceremonies</a>
+                    <a href="#" class="item">Gazebo Plans</a>
+                  </div>
+                </div>
+                <div class="three wide column">
+                  <h4 class="ui inverted header">Services</h4>
+                  <div class="ui inverted link list">
+                    <a href="#" class="item">Banana Pre-Order</a>
+                    <a href="#" class="item">DNA FAQ</a>
+                    <a href="#" class="item">How To Access</a>
+                    <a href="#" class="item">Favorite X-Men</a>
+                  </div>
+                </div>
+                <div class="seven wide column">
+                  <h4 class="ui inverted header">Footer Header</h4>
+                  <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>
