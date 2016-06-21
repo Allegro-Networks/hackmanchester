@@ -380,7 +380,7 @@
 		var map_config = {
 			mosi: { locationName: 'Museum of Science & Industry', centreLat:53.476407, centreLng:-2.258013, lat:53.4764069, lng:-2.253713199999993 },
 			madlab: { locationName: 'MadLab, Manchester', centreLat:53.483345, centreLng:-2.232721, lat:53.484370, lng:-2.236453}
-            code: { locationName: 'Code Computerlove', centreLat:53.4823168, centreLng:-2.23693, lat:, lng: }
+            code: { locationName: 'Code Computerlove', centreLat:53.4823168, centreLng:-2.23693, lat:53.4823756, lng:-2.234742 }
 		};
 		
 		config_to_use = map_config.mosi;
