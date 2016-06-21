@@ -53,7 +53,7 @@ class App < Sinatra::Application
 	end
 
 	get '/youthhack-june2016' do
-		erb :youthhack
+		erb :youthhack_june2016
 	end
 
 	get '/sponsor/senior' do
