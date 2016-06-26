@@ -48,6 +48,10 @@ class App < Sinatra::Application
 		erb :junior
 	end
 
+	get '/junior/2015' do
+		erb :junior_2015
+	end
+
 	get '/youthhack' do
 		erb :youthhack
 	end
