@@ -60,11 +60,31 @@ class App < Sinatra::Application
 		erb :senior_sponsor
 	end
 
-	get '/youthhack/2016/june' do
+	get '/youthhack/manchester/2016' do
 		erb :youthhack_june2016
 	end
 
-	get '/youthhack/2016/feb' do
+	get '/youthhack/manchester/2016/june' do
+		erb :youthhack_june2016
+	end
+
+	get '/youthhack/manchester/2016/feb' do
 		erb :youthhack_feb2016
+	end
+
+	get '/youthhack/wythenshaw' do
+		erb :youthhack_wythenshaw
+	end
+
+	get '/youthhack/salford' do
+		erb :youthhack_salford
+	end
+
+	get '/youthhack/tameside' do
+		erb :youthhack_tameside
+	end
+
+	get '/youthhack/wigan' do
+		erb :youthhack_wigan
 	end
 end
