@@ -131,6 +131,24 @@ p.date{
 	float: left;
 }
 
+.date a{
+	display: inline-block;
+	background: #fff;
+	padding: 5px;
+	margin: 5px;
+	color: #000;
+	text-decoration: none;
+}
+
+.introduction a{
+	display: inline-block;
+	background: #fff;
+	padding: 5px;
+	margin: 5px;
+	color: #000;
+	text-decoration: none;
+}
+
 .year{
 	font-size: 43px;
 }
