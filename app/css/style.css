@@ -521,11 +521,12 @@ footer{
 	overflow: hidden;
 }
 
+
 footer p{
 	background: #000000;
 	color: #fff;
 	font-size: 24px;
-	line-height: 50px;
+	line-height: 30px;
 	padding: 0 50px;
 	box-sizing: border-box;
 }
@@ -533,6 +534,16 @@ footer p{
 footer p#copyright_info{
 	width: 50%;
 	float: left;
+}
+
+footer p#copyright_info a{
+	display: inline-block;
+	background: #fff;
+	padding: 5px;
+	padding-top:10px;
+	margin: 5px;
+	color: #000;
+	text-decoration: none;
 }
 
 footer p#link_love{
