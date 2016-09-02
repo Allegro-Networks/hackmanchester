@@ -15,11 +15,20 @@ footer p{
 }
 
 footer p#copyright_info{
+	padding:10px 0;
+
 	width: 50%;
 	float: left;
 }
 
-footer p#copyright_info a{
+footer p#owner_info{
+	padding-left:0;
+	width: 50%;
+	float: left;
+	font-size: 18px;
+}
+
+footer p#owner_info a{
 	display: inline-block;
 	background: #fff;
 	padding: 5px;
