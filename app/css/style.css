@@ -356,6 +356,16 @@ div.booking li:hover a{
 	text-transform: uppercase;
 }
 
+#sponsors .challenges-header{
+	background: #000000;
+	font-size: 40px;
+	line-height: 1.5;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+
 /*body#junior #sponsors li div p a{
 	background: #24890d;
 }*/
@@ -400,6 +410,7 @@ div.booking li:hover a{
 #sponsors li div h2.mover_and_shaker {
 	background-image: url(../images/sponsor_mover.png);
 }
+
 
 #challenges{
 	border-top: 50px solid #fff;
@@ -587,7 +598,6 @@ footer p#link_love a{
 	#challenges ul li{
 		width: 48%;
 		margin: 1%;
-		height: 1em;
 		padding-top: 48%;
 	}
 
