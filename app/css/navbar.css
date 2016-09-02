@@ -1,0 +1,21 @@
+.navbar {
+    position: relative;
+    background: #fff;
+}
+
+.header-holder {
+    overflow: hidden;
+    background: #000;
+    font-size: 12px;
+    color: #0b3361;
+    text-align: center;
+}
+
+.header-holder .info-date {
+    display: block;
+    font-size: 15px;
+}
+
+.header-holder .info-title {
+    display: block;
+}
