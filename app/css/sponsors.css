@@ -1,0 +1,131 @@
+#sponsors{
+	border-top: 50px solid #000000;
+	background: #fff;
+	padding: 50px;
+	overflow: hidden;
+}
+
+#sponsors li{
+	background: #000000;
+	background-image: url(../images/sponsor_logo_test.png);
+	background-size: 100%;
+	width: 30%;
+	margin: 1.66%;
+	float: left;
+	color: #fff;
+	padding-top: 30%;
+	position: relative;
+}
+
+#sponsors li div {
+	position: absolute;
+	top: 60%;
+	text-align: center;
+	width: 100%;
+}
+
+#sponsors li div h2{
+	font-size: 18px;
+	line-height: 20px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+#sponsors li div p{
+	margin-bottom: 10px;
+}
+
+#sponsors li div p a{
+	background: #ffcc00;
+	color: #000000;
+	display: inline-block;
+	padding: 5px;
+	margin: 5px;
+	font-size: 12px;
+	text-decoration: none;
+	transition: all 0.25s;
+	text-transform: uppercase;
+}
+
+#sponsors .challenges-header{
+	background: #000000;
+	font-size: 40px;
+	line-height: 1.5;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*body#junior #sponsors li div p a{
+	background: #24890d;
+}*/
+
+#sponsors li div p a:hover{
+	background: #000000;
+	color: #ffcc00;
+}
+
+/*body#junior #sponsors li div p a:hover{
+	background: #000000;
+	color: #24890d;
+}*/
+#sponsors li div h2.sponsor{
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	padding-left: 30px;
+}
+
+#sponsors li div h2.sponsor span{
+	padding-left: 5px;
+
+
+}
+
+#sponsors li div h2.headline{
+	background-image: url(../images/sponsor_headline.png);
+}
+
+#sponsors li div h2.challenge_s{
+	background-image: url(../images/sponsor_challenge.png);
+}
+
+#sponsors li div h2.bar {
+	background-image: url(../images/sponsor_bar.png);
+}
+
+#sponsors li div h2.mentor {
+	background-image: url(../images/sponsor_mentor.png);
+}
+
+#sponsors li div h2.mover_and_shaker {
+	background-image: url(../images/sponsor_mover.png);
+}
+
+@media (max-width: 990px){
+	#sponsors ul li{
+		width: 48%;
+		margin: 1%;
+		padding-top: 48%;
+	}
+}
+
+@media (max-width: 600px){
+	#sponsors ul li{
+		width: 80%;
+		margin: 10%;
+		padding-top: 80%;
+	}
+
+}
+
+@media (max-width: 440px){
+	#sponsors ul li{
+		width: 100%;
+		margin: 0 0 10% 0;
+		padding-top: 100%;
+	}
+
+}
+
+

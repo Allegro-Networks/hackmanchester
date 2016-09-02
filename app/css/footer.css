@@ -1,0 +1,100 @@
+footer{
+	border-top: 50px solid #000000;
+	padding: 50px 0;
+	overflow: hidden;
+}
+
+
+footer p{
+	background: #000000;
+	color: #fff;
+	font-size: 24px;
+	line-height: 30px;
+	padding: 0 50px;
+	box-sizing: border-box;
+}
+
+footer p#copyright_info{
+	width: 50%;
+	float: left;
+}
+
+footer p#copyright_info a{
+	display: inline-block;
+	background: #fff;
+	padding: 5px;
+	padding-top:10px;
+	margin: 5px;
+	color: #000;
+	text-decoration: none;
+}
+
+footer p#link_love{
+	float: right;
+}
+
+footer p#link_love a{
+	height: 50px;
+	width: 146px;
+	display: inline-block;
+	margin: 25px 0 25px 10px;
+	background-image: url(../images/farm_logo.png);
+	background-size: cover;
+	text-indent: -9999px;
+}
+
+
+@media (max-width: 900px){
+	footer p {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 750px){
+	p.introduction{
+		font-size: 28px;
+	}
+
+	footer p{
+		font-size: 14px;
+		line-height: 25px;
+		padding: 25px 50px;
+	}
+
+	footer p#link_love a{
+		height: 25px;
+		width: 73px;
+		margin: 12.5px 0 12.5px 10px;
+	}
+}
+
+@media (max-width: 600px){
+
+	div.booking ul{
+		padding: 50px;
+	}
+
+	div.booking ul li{
+		font-size: 21px;
+	}
+
+	#videos ul li{
+		float: none;
+		width: 100%;
+	}
+
+	footer p{
+		text-align: center;
+		margin: 0 50px;
+	}
+
+	footer p#copyright_info{
+		float: none;
+		width: auto;
+		margin-bottom: 50px;
+	}
+
+	footer p#link_love{
+		float: none;
+	}
+}

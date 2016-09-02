@@ -1,0 +1,30 @@
+#location{
+	background-color: #FFCC00;
+}
+
+/*body#junior #location{
+	background-color: #24890d;
+}*/
+
+#map-canvas {
+	height: 400px;
+	margin: 0;
+	padding: 0;
+}
+
+#location p{
+	background: #000000;
+	color: #fff;
+	font-size: 24px;
+	line-height: 50px;
+	padding: 50px;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+@media (max-width: 500px){
+	#location p{
+		font-size: 18px;
+		line-height: 40px;	
+	}	
+}

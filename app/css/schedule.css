@@ -1,0 +1,43 @@
+#schedule{
+	border-top: 50px solid #000000;
+	background: #fff;
+	font-size: 24px;
+	padding: 50px;
+	overflow: hidden;
+	text-transform: uppercase;
+}
+
+#schedule .header{
+	padding: 50px;
+	font-size: 40px;
+	overflow: hidden;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+
+#schedule h3{
+	font-size: 1.5em;
+	display: inline-block;
+	margin: 1rem 0;
+}
+
+#schedule td{
+   padding-left:5rem;
+}
+
+
+#schedule dl {
+	font-size: 0.8em;
+  	text-align: left;
+}
+
+#schedule dt {
+	margin: 1em 0 0.2em 0;
+	font-weight: bold;
+}
+
+#schedule dd {
+	display: inline;
+  	padding-left: 0.5em;
+}
