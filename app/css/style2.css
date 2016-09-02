@@ -53,7 +53,7 @@ html{
 	color: #000000;
 }
 
-body{
+.body{
 	max-width: 1440px;
 	margin: 0 auto;
 	background-color: #FFCC00;
@@ -85,31 +85,6 @@ p.introduction{
 	height: 350px;
 	width: 50%;
 	float: left;
-}
-
-p.date{
-	background: #000000;
-	font-size: 60px;
-	line-height: 1;
-	color: #fff;
-	width: 50%;
-	padding: 50px;
-	box-sizing: border-box;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-align: center;
-	height: 235px;
-	width: 50%;
-	float: left;
-}
-
-.date a{
-	display: inline-block;
-	background: #fff;
-	padding: 5px;
-	margin: 5px;
-	color: #000;
-	text-decoration: none;
 }
 
 .introduction a{
