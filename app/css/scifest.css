@@ -1,9 +1,4 @@
-.sci-fest {
-    position: relative;
-    background: #fff;
-}
-
-.header-holder {
+#sci-fest .header-holder {
     overflow: hidden;
     background: #ffca00;
     font-size: 12px;
@@ -11,16 +6,16 @@
     text-align: center;
 }
 
-.header-holder .info-date {
+#sci-fest .header-holder .info-date {
     display: block;
     font-size: 15px;
 }
 
-.header-holder .info-title {
+#sci-fest .header-holder .info-title {
     display: block;
 }
 
-.logo {
+#sci-fest .logo {
     position: relative;
     z-index: 1;
     width: 220px;
@@ -28,7 +23,7 @@
     margin-top:0.4rem;
 }
 
-.logo a {
+#sci-fest .logo a {
     background: url(http://www.manchestersciencefestival.com/img/logo.png) no-repeat;
     background-size: 80% auto;
     width: 100%;
@@ -37,7 +32,7 @@
     overflow: hidden;
 }
 
-.logo:after {
+#sci-fest .logo:after {
     content: "";
     position: absolute;
     left: -9999px;

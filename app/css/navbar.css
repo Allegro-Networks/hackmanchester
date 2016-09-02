@@ -1,21 +1,18 @@
-.navbar {
+#navbar {
+    margin-top:1rem;
     position: relative;
-    background: #fff;
-}
-
-.header-holder {
-    overflow: hidden;
     background: #000;
-    font-size: 12px;
-    color: #0b3361;
+    overflow: hidden;
+    color: #fff;
     text-align: center;
+    height: 4rem;
 }
 
-.header-holder .info-date {
-    display: block;
-    font-size: 15px;
-}
-
-.header-holder .info-title {
-    display: block;
+#navbar a{
+    display: inline-block;
+    background: #fff;
+    padding: 5px;
+    padding-top:10px;
+    color: #000;
+    text-decoration: none;
 }
