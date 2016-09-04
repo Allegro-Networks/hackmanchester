@@ -103,6 +103,12 @@ footer p#link_love a{
 		margin-bottom: 50px;
 	}
 
+	footer p#owner_info{
+		float: none;
+		width: auto;
+		margin-bottom: 50px;
+	}
+
 	footer p#link_love{
 		float: none;
 	}
