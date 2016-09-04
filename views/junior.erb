@@ -1,39 +1,11 @@
-<!doctype html>
-
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HackManchester Junior</title>
-    <meta name="description" content="2 day coding competition by @hackmanchester and Manchester CoderDojo for those aged 18 and Under. Teams turn up with an idea and have just 2 days to present a working product!">
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsqPcSmyY-6WIl0Q_Q3Wzr7d-uNFsatGc">
-    </script>
-    <script src ="/js/map.js"></script>
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-31137162-1']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-</head>
-
-<body id="junior">
+    
     <header>
         <div class="wrapper">
             <hgroup>
-                <h1 id="logo"><a href="/"><img src="/images/logo.png"/ alt="HAC 1: Hack Manchester 2016" width="100%"></a></h1>
-                <h2 class="date">24th &dash; 25th October 2016" width="100%"</h2>
+                <h1 id="logo"><a href="#"><img src="/images/logo.png"/ alt="HAC 1: Hack Manchester 2016" width="100%"></a></h1>
+                <p class="date">
+                    24 - 25<br><span class="year">OCT 2016</span>
+                </p>
             </hgroup>
             <p class="introduction">A 2 Day coding Competition for those 18 and under in Manchester</p>
             <div class="booking">
@@ -44,65 +16,114 @@
             </div>
         </div>
     </header>
-    <section id="videos">
+    <!-- <section id="videos">
         <!-- <ul> -->
            <!--  <li id="intro_vid"><a href="https://vimeo.com/35322798" target="_blank">Hack Manchester: An Introduction</a></li>
-            <li id="summary_vid" target="_blank"><a href="https://youtu.be/RuxkKF4VvXY">Hack Manchester: 2013 Summary</a></li> -->
-<!--         </ul>-->            
+            <li id="summary_vid" target="_blank"><a href="https://youtu.be/RuxkKF4VvXY">Hack Manchester: 2013 Summary</a></li> 
+         </ul>            
             <iframe width="560" height="315" src="https://www.youtube.com/embed/BvGA9dMY6wA" frameborder="0" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Fouo9qEkxZ8" frameborder="0" allowfullscreen></iframe>
-    </section>
+    </section> -->
     <section id="main_content">
-        <p>2 day coding competition by <a href="http://twitter.com/hackmanchester">@hackmanchester</a> and <a href="http://mcrcoderdojo.org.uk/">Manchester CoderDojo</a> for those 18 and Under.</p> 
-
-        <p>Teams of up to 4 turn up with an idea and have just 2 days to present a working product! Take part in the challenges to win prestige and prizes.</p>
+        <p><a href="http://twitter.com/hackmanchester">@hackmanchester</a> junior is a 2 day coding competition for those 18 and Under. Teams of up to 4 turn up with an idea and have just 2 days to present a working product! Take part in the challenges to win prestige and prizes.</p>
+        <p>Located at the <a href="http://msimanchester.org.uk/">Museum of Science and Industry</a>, Liverpool Road, Manchester as part of the <a href="http://www.manchestersciencefestival.com/">Manchester Science Festival</a>.</p>
     </section>
     <section id="location">
-        <div id="map-canvas"></div>
-        <p>The event will take in the greatest industrial city on earth… <strong>Manchester</strong> at the  <strong>Museum of Science and Industry</strong>.</p>
+        <div id="map-canvas" data-location="mosi"></div>
     </section>
-    <section id="sponsors">
-        <ul>
-            <li style="background-image: url(/images/sponsors/sponsor_wauk.png)">
-                <div>
-                    <h2 class="headline sponsor"><span>Headline Sponsor</span></h2>
-                    <p class ="challenge"><a href="http://www.waukta.com/hack-manchester-junior/">View Challenge</a><a href="http://www.waukta.com/">Visit Website</a></p>
-                </div>
-            </li>
-            <li style="background-image: url(/images/sponsors/sponsor_clockwork.png); background-size: 80%; background-repeat: no-repeat;  background-position: 50% 30%;">
-                <div>
-                    <h2 class="challenge_s sponsor">Challenge Sponsor</h2>
-                    <p class ="website"><a href="https://www.clockworksms.com/">Visit Website</a></p>
-                </div>
-            </li>
-        </ul>
-    </section>
-    <section id='challenges'>
-        <ul>
-            <li>
-                <div>
-                    <h2>Best in Show</h2>
-                    <dl>
-                        <dt>Qualifying Criteria:</dt><dd>All hacks qualify</dd>
-                        <dt>Sponsor:</dt><dd><a href='http://waukta.com'>WA:UK Tech Angels</a></dd>
-                        <dt>Judge:</dt><dd><a href='http://twitter.com/unclethargy'>Craig Dean</a></dd>
-                        <dt>Prize:</dt><dd>Kindle Fire HD each</dd>
-                    </dl>    
-                </div>
-            </li>
-            <li>
-                <div>
-                    <h2>Pre-University Challenge</h2>
-                    <dl>
-                        <dt>Qualifying Criteria:</dt><dd>Entire team from a single school.</dd>
-                        <dt>Sponsor:</dt><dd><a href='http://wearefarm.com'>FARM</a></dd>
-                        <dt>Judge:</dt><dd><a href='http://twitter.com/jon_atkinson'>Jon Atkinson</a></dd>
-                        <dt>Prize:</dt><dd>Trophy and more</dd>
-                    </dl>    
-                </div>
-            </li>
-        </ul>
-    </section>
+    <a name="sponsors"></a>
+        <section id="sponsors">
+            <h2 class='header'>SPONSORS</h2>
+            <ul>
+                <li style="background-image: url(/images/sponsors/sponsor_wauk.png)">
+                    <div>
+                        <h2 class="headline sponsor"><span>Headline Sponsor</span></h2>
+                        <p class ="challenge">
+                            <a href="http://www.webapplicationsuk.com/hack-jnr">View Challenge</a>
+                            <a href="http://www.webapplicationsuk.com/ ">Visit Website</a></p>
+                    </div>
+                </li>
+                <li style="background-image: url(/images/sponsors/sponsor_msf1.png); background-repeat: no-repeat;  background-position: 30% 20%;">
+                    <div>
+                        <h2 class="challenge_s sponsor">Sponsor</h2>
+                        <p class ="website">
+                            <a href="http://www.manchestersciencefestival.com/">Visit Website</a>
+                        </p>
+                    </div>
+                </li>
+                <li style="background-image: url(/images/sponsors/sponsor_clockwork.png)">
+                    <div>
+                        <h2 class="challenge_s sponsor">Challenge Sponsor</h2>
+                        <p class ="challenge">
+                        <a href="https://www.clockworksms.com/blog/we-re-sponsoring-hack-manchester-2016/">View Challenge</a>
+                            <a href="http://www.clockworksms.com/">Visit Website</a>
+                        </p>
+                    </div>
+                </li>
+                 <li style="background-image: url(/images/sponsors/sponsor_thales.jpg); background-repeat: no-repeat; background-position: 30% 20%;">
+                    <div>
+                        <h2 class="mover_and_shaker sponsor">Challenge Sponsor</h2>
+                        <p class ="challenge">
+                            <!-- <a href="http://bit.ly/thaleschallenge">View Challenge</a> -->
+                            <a href="http://ukearlycareers.thalesgroup.com/">Visit Website</a>
+                        </p>
+                    </div>
+                </li>
+                <li style="background-image: url(/images/sponsors/sponsor_siemens.png); background-size: 80%; background-repeat: no-repeat;  background-position: 50% 30%;">
+                    <div>
+                        <h2 class="challenge_s sponsor">Challenge Sponsor</h2>
+                        <p class ="website">
+                            <!-- <a href="https://blogs.siemens.com/curiosity-project/stories/25391/">View Challenge</a> -->
+                            <a href="http://www.siemens.co.uk/">Visit Website</a></p>
+                    </div>
+                </li> 
+            </ul>
+        </section>
+        <a name="challenges"></a>
+        <section id='challenges'>
+            <h2 class='header'>CHALLENGES</h2>
+            <ul>
+                <li style="background-image: url(/images/sponsors/sponsor_wauk.png)">
+                    <div>
+                        <h2 class="headline sponsor"><span>BEST IN SHOW</span></h2>
+                        <p class ="challenge">
+                            <a href="http://www.webapplicationsuk.com/hack-jnr">View Challenge</a>
+                    </div>
+                </li>
+                 <li style="background-color: #FC0; background-image: url(https://cdn0.iconfinder.com/data/icons/users-android-l-lollipop-icon-pack/24/student-512.png);background-repeat: no-repeat; background-size: 60%; background-position: center top; ">
+                    <div>
+                        <h2 class="challenge_s sponsor"><span>Pre-University Challenge</span></h2>
+                        <p class ="challenge">like the rowing comp but drier</p>
+                        <p class ="challenge">judge TBC</p>
+                        <p class ="challenge">prize TBA</p>
+                    </div>
+                </li>
+                <li style="background-image: url(/images/sponsors/sponsor_clockwork.png)">
+                    <div>
+                        <h2 class="challenge_s sponsor">Challenge Sponsor</h2>
+                        <p class ="challenge">
+                            <a href="https://www.clockworksms.com/blog/we-re-sponsoring-hack-manchester-2016/">View Challenge</a>
+                        </p>
+                    </div>
+                </li>
+                <!-- coop -->
+                <li style="background-color: #FC0; background-image: url(http://www.templatemonster.com/blog/wp-content/uploads/2012/06/comingsoon.png);background-repeat: no-repeat; background-size: 60%; background-position: center; ">
+                    <div>
+                    </div>
+                </li>
+                <!-- GMP -->
+                <li style="background-color: #FC0; background-image: url(http://www.templatemonster.com/blog/wp-content/uploads/2012/06/comingsoon.png);background-repeat: no-repeat; background-size: 60%; background-position: center; ">
+                    <div>
+                    </div>
+                </li>
+                <!-- CRUK -->
+                <li style="background-color: #FC0; background-image: url(http://www.templatemonster.com/blog/wp-content/uploads/2012/06/comingsoon.png);background-repeat: no-repeat; background-size: 60%; background-position: center; ">
+                    <div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    <!-- 
     <section id='schedule'>
         <h2 class='header'>SCHEDULE</h2>
         <table> 
@@ -129,10 +150,4 @@
                 </tr>
             </tbody>
         </table>
-    </section>
-    <footer>
-        <p id="copyright_info">Copyright &copy; 2015,  Hack Manchester, All rights reserved.</p>
-        <p id="link_love">Site by <a href="http://wearefarm.com">FARM</a></p>
-    </footer>
-</body>
-</html>
+    </section> -->

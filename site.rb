@@ -45,7 +45,7 @@ class App < Sinatra::Application
 	end
 
 	get '/junior' do
-		erb :junior
+		erb :junior, :layout => :new_layout
 	end
 
 	get '/junior/2015' do
