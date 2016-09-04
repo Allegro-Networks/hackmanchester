@@ -41,7 +41,7 @@ class App < Sinatra::Application
 	end
 
 	get '/' do
-		erb :index
+		erb :index, :layout => :new_layout
 	end
 
 	get '/junior' do
