@@ -1,0 +1,61 @@
+#sponsors{
+	border-top: 50px solid #000000;
+	background: #000;
+	overflow: hidden;
+	font-align:center;
+}
+
+#sponsors li{
+	background: #000000;
+	background-image: url(../images/sponsor_logo_test.png);
+	background-size: 100%;
+	width: 30%;
+	float: left;
+	color: #fff;
+	padding-top: 20%;
+	position: relative;
+	height:0;
+}
+
+#sponsors li div {
+	position: absolute;
+	top: 80%;
+	text-align: center;
+	width: 100%;
+}
+
+#sponsors li div h2{
+	font-size: 18px;
+	display: inline-block;
+}
+
+
+#sponsors li div h2.sponsor{
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	padding-left: 30px;
+}
+
+#sponsors li div h2.sponsor span{
+	padding-left: 5px;
+}
+
+#sponsors li div h2.headline{
+	background-image: url(../images/sponsor_headline.png);
+}
+
+#sponsors li div h2.challenge_s{
+	background-image: url(../images/sponsor_challenge.png);
+}
+
+#sponsors li div h2.bar {
+	background-image: url(../images/sponsor_bar.png);
+}
+
+#sponsors li div h2.mentor {
+	background-image: url(../images/sponsor_mentor.png);
+}
+
+#sponsors li div h2.mover_and_shaker {
+	background-image: url(../images/sponsor_mover.png);
+}

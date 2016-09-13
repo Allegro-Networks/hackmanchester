@@ -48,8 +48,8 @@ class App < Sinatra::Application
 		erb :junior, :layout => :new_layout
 	end
 
-	get '/videos' do
-		erb :video, :layout => :new_layout
+	get '/junior/flyer' do
+		erb :junior_flyer_2016
 	end
 
 	get '/junior/2015' do

@@ -1,0 +1,327 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+	background: #000000;
+	font-family: "museo sans", sans-serif;
+	color: #000000;
+}
+
+.body{
+	max-width: 1440px;
+	margin: 0 auto;
+	background-color: #FFCC00;
+	background-image: repeating-linear-gradient(45deg, #000000 0px, #000000 50px, transparent 50px, transparent 100px, #000000 100px);
+}
+
+/*body#junior{
+	background-color: #24890d;
+}*/
+
+/*.wrapper{
+	max-width: 1200px;
+	margin: 0 auto;
+}*/
+
+
+
+p.introduction{
+	background: #000000;
+	font-size: 40px;
+	line-height: 1.5;
+	color: #fff;
+	width: 50%;
+	padding: 50px;
+	box-sizing: border-box;
+	margin-top: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 50%;
+	float: left;
+}
+
+.introduction a{
+	display: inline-block;
+	background: #fff;
+	padding: 5px;
+	margin: 5px;
+	color: #000;
+	text-decoration: none;
+}
+
+.year{
+	font-size: 43px;
+}
+
+div.booking{
+	width: 50%;
+	float: left;
+	border: 50px solid transparent;
+	box-sizing: border-box;
+}
+
+div.booking ul{
+	background: #FFCC00;
+	height:auto;
+	padding: 50px 50px 50px 50px;
+}
+
+/*body#junior div.booking ul{
+	background: #24890d
+}*/
+
+div.booking li{
+	background: #000000;
+	text-transform: uppercase;
+	height: 100px;
+	font-size: 24px;
+	transition: background 0.56s;
+	border-radius: 25px;
+}
+
+div.booking li.alpha{
+	margin-bottom: 50px;
+}
+
+div.booking li a{
+	line-height: 100px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+}
+
+div.booking li:hover{
+	background: #fff;
+}
+
+div.booking li:hover a{
+	color: #000;
+}
+
+#main_content{
+	background-color: #FFCC00;
+	color: #000000;
+	clear: both;
+	padding: 50px;
+	font-size: 32px;
+	line-height: 50px;
+}
+
+#main_content a{
+	display: inline-block;
+	background: #000000;
+	padding: 5px;
+	margin: 5px;
+	color: #fff;
+	text-decoration: none;
+}
+
+#secondary_content{
+	background-color: #000;
+	color: #FFCC00;
+	clear: both;
+	padding: 50px;
+	font-size: 32px;
+	line-height: 50px;
+}
+
+#secondary_content a{
+	display: inline-block;
+	background: #FFCC00;
+	padding: 5px;
+	margin: 5px;
+	color: #000;
+	text-decoration: none;
+}
+
+
+
+
+#videos{
+	/*border-top: 50px solid #000000;*/
+}
+
+#videos ul{
+	overflow: hidden;
+}
+
+#videos ul li{
+	float: left;
+	width: 50%;
+	background: #000000;
+	color: #FFCC00;
+	height: 400px;
+	background-size: cover;
+	background-position: center center;
+}
+
+/*body#junior #videos ul li{
+	color: ##24890d;
+}*/
+
+#videos ul li#intro_vid{
+	background-image: url(../images/video1.jpg);
+}
+
+#videos ul li#summary_vid{
+	background-image: url(../images/video2.jpg);
+}
+
+#videos ul li a{
+	display: block;
+	height: 400px;
+	width: 100%;
+	background-image: url(../images/video_icon.png);
+	background-size: 180px 180px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
+
+
+
+
+@media (max-width: 1080px){
+	div.booking ul{
+		padding: 50px 25px;
+	}
+}
+
+@media (max-width: 990px){
+	p.introduction{
+		font-size: 36px;
+	}
+
+	div.booking li {
+		font-size: 21px;
+	}
+}
+
+@media (max-width: 880px){
+	p.introduction{
+		font-size: 30px;
+		height: 300px;
+	}
+
+	div.booking ul{
+		padding: 25px;
+	}
+}
+
+@media (max-width: 770px){
+
+	div.booking {
+		width: 100%;
+		float: none;
+		margin-bottom: 50px;
+	}
+
+	div.booking ul{
+		padding: 50px;
+	}
+
+	p.introduction{
+		width: 100%;
+		float: none;
+		height: auto;
+	}
+}
+
+
+@media (max-width: 750px){
+	p.introduction{
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 650px){
+	#main_content p{
+		font-size: 24px;
+	}	
+}
+
+@media (max-width: 600px){
+
+	div.booking ul{
+		padding: 50px;
+	}
+
+	div.booking ul li{
+		font-size: 21px;
+	}
+
+	#videos ul li{
+		float: none;
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px){
+	#main_content p{
+		font-size: 18px;
+		line-height: 40px;
+	}
+
+	div.booking{
+		border-width: 0;
+	}
+}
+
+@media (max-width: 440px){
+	div.booking ul{
+		padding: 50px 25px;
+	}
+
+	div.booking ul li{
+		font-size: 18px;
+	}
+}
+
+
