@@ -48,6 +48,11 @@ class App < Sinatra::Application
 		erb :junior, :layout => :new_layout
 	end
 
+	get '/sponsor' do
+		erb :sponsor, :layout => :sponsor_layout
+	end
+
+
 	get '/junior/flyer' do
 		erb :junior_flyer_2016
 	end
