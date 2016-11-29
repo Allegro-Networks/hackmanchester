@@ -1,6 +1,5 @@
-#junior{
-	padding: 50px 0;
-	border-bottom: 50px solid #000000;
+section{
+	display: block;
 }
 
 .logo{
@@ -10,6 +9,12 @@
     width: 50%;
     box-sizing: border-box;
     float: right;
+}
+
+.full-width-logo{
+    text-align: center
+	background: #FC0 none repeat scroll 0% 0%;
+    padding: 10px;
 }
 
 .logo img{
